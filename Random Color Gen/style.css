@@ -57,3 +57,26 @@ body{
     min-width: 200px;
     min-height: 70px;
 }
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width:300px;
+    height:auto;
+  }
+  .display {
+      width:300px;
+      font-size: 24px;
+      text-align: left;
+      padding: 5px;
+  }
+  .title{
+     font-size: 35px;
+     text-align: center;
+     min-width: 50px;
+    margin-bottom: 150px;
+    margin-top: 10px;
+  }
+  .btn{
+    margin-top: 10px;
+  }
+}
