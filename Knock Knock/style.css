@@ -4,23 +4,40 @@ body{
     max-width: 100vw;
 }
 
-.wrapper{
-    position: absolute;
-    top: 40%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-}
+
 
 .display{
+    margin: 0;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: gray;
-    font-size: 100px;
-    width: 1000px;
+    font-size: 50px;
+    max-width: 1000px;
+    max-height: 500px;
     font-family: 'Ultra', serif;
     animation: blink 3s infinite;
+    text-align: center;
+}
+
+.displayOn{
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: gray;
+    font-size: 50px;
+    max-width: 1000px;
+    max-height: 500px;
+    font-family: 'Ultra', serif;
+    animation: none;
+    text-align: center;
+}
+
+.displayOff{
+    display: none;
 }
 
 @keyframes blink {
@@ -48,16 +65,37 @@ body{
 }
 
 .button{
-    position: relative;
-    margin-top: 300%;
-    left: 0%;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: 100px;
-    height: 20px;
-    padding: 30px;
+    margin-top: 200px;
+    max-width: 300px;
+    max-height: 100px;
+    padding: 10px;
     text-align: center;
     align-items: center;
-    border: 5px solid gray;
+    border: 2px solid gray;
     color: ivory;
     font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.newBtn{
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 300px;
+    max-height: 100px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    border: 2px solid gray;
+    color: ivory;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    background: black;
 }
