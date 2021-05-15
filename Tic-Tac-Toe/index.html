@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Mrs+Sheppards&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <div class="p1">Tic-</div>
+            <div class="p2">Tac-</div>
+            <div class="p3">Toe</div>
+        </div>
+        <div class="items">
+            <div id="current" class="current">Current Turn: </div>
+            <div id="winner" class="winner">The winner is: </div>
+            <button class="reload" onClick="history.go(0);">Reload</button>
+        </div>
+        <div class="main" id="main">
+            <div class="grid">
+                <div id="1" onclick="ttt(this.id)" class="grids grid-1"></div>
+                <div id="2" onclick="ttt(this.id)" class="grids grid-2"></div>
+                <div id="3" onclick="ttt(this.id)" class="grids grid-3"></div>
+                <div id="4" onclick="ttt(this.id)" class="grids grid-4"></div>
+                <div id="5" onclick="ttt(this.id)" class="grids grid-5"></div>
+                <div id="6" onclick="ttt(this.id)" class="grids grid-6"></div>
+                <div id="7" onclick="ttt(this.id)" class="grids grid-7"></div>
+                <div id="8" onclick="ttt(this.id)" class="grids grid-8"></div>
+                <div id="9" onclick="ttt(this.id)" class="grids grid-9"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
