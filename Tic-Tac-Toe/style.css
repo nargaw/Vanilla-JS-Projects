@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+    background: black;
+}
+
+.title{
+    color: red;
+    font-family: 'Mrs Sheppards', cursive;
+    font-size: 150px;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.current{
+    color: red;
+    font-family: 'Julius Sans One', sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.winner{
+    color: red;
+    font-family: 'Julius Sans One', sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.reload{
+    color: red;
+    background-color: black;
+    border: 2px solid red;
+    font-family: 'Julius Sans One', sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.reload:hover{
+    color: black;
+    background-color: red;
+}
+
+.p1{
+    animation: text 6s infinite;
+}
+
+.p2{
+    animation: text 6s 1s infinite;
+}
+
+.p3{
+    animation: text 6s 2s infinite;
+}
+
+
+.grid{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px;
+    color: white;
+    font-size: 110px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.grid-1{
+    border-right: 2px solid red;
+    text-align: center;
+    justify-content: center;
+    padding: none;
+}
+
+.grid-2{
+    border-right: 2px solid red;
+    text-align: center;
+    justify-content: center;
+}
+
+.grid-3{
+    text-align: center;
+    justify-content: center;
+}
+
+.grid-4{
+    border-right: 2px solid red;
+    border-top: 2px solid red;
+    text-align: center;
+    justify-content: center;
+    padding: none;
+}
+
+.grid-5{
+    border-right: 2px solid red;
+    border-top: 2px solid red;
+    text-align: center;
+    justify-content: center;
+    padding: none;
+}
+
+.grid-6{
+    border-top: 2px solid red;
+    text-align: center;
+    justify-content: center;
+}
+
+.grid-7{
+    border-right: 2px solid red;
+    border-top: 2px solid red;
+    text-align: center;
+    justify-content: center;
+}
+
+.grid-8{
+    border-right: 2px solid red;
+    border-top: 2px solid red;
+    text-align: center;
+    justify-content: center;
+}
+
+.grid-9{
+    border-top: 2px solid red;
+    text-align: center;
+    justify-content: center;
+}
+
+@keyframes text {
+    0%{
+        color: black;
+    }
+    50%{
+        color: black;
+    }
+    60%{
+        color: red;
+    }
+    100%{
+        color: red;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    display: flex;
+    position: absolute;
+    left: 55%;
+    top: 8%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+  }
+
+    .p1{
+        animation: none;
+    }
+
+    .p2{
+        animation: none;
+    }
+
+    .p3{
+        animation: none;
+    }
+}
