@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    background: #ade8f4;
+}
+
+div.title{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 10vh;
+}
+
+div.buttons{
+    margin-top: -230px;
+    display: grid;
+    grid-template-columns: 10px 10px 10px 10px 10px 10px 10px;
+    grid-column-gap: 50px;
+}
+
+div.btn {
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 10px solid green;
+    cursor: pointer;
+}
+
+div.board{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    width: 35vw;
+    height: 50vh;
+    border: 5px solid black;
+    border-radius: 50px;
+}
+
+div.buttons{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+div.tiles{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+div.space{
+    background: white;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+div.players{
+    position: absolute;
+    left: -280px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 25px;
+}
+
+div.current{
+    position: absolute;
+    left: 150px;
+    top: -50px;
+}
+
+div.p1on{
+    position: absolute;
+    left: 170px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: yellow;
+    border: 1px solid black;
+}
+
+div.p2on{
+    position: absolute;
+    left: 170px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+    border: 1px solid black;
+}
