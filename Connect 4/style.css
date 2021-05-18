@@ -98,3 +98,15 @@ div.p2on{
     background: red;
     border: 1px solid black;
 }
+
+.one{
+    background: yellow;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.two{
+    background: red;
+    border-radius: 50%;
+    border: 2px solid black;
+}
