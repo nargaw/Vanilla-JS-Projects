@@ -21,13 +21,13 @@ const players = [1, 2];
 const current = Math.floor(Math.random() * players.length);
 console.log(players[current]);
 
-// window.onload = function play() {
-//     if (players[current] === 1){
-//         document.getElementById('p1').classList.toggle('p1on');
-//     } else {
-//         document.getElementById('p2').classList.toggle('p2on');
-//     } return;
-// }
+window.onload = function play() {
+     if (players[current] === 1){
+         document.getElementById('p1').classList.toggle('p1on');
+     } else {
+         document.getElementById('p2').classList.toggle('p2on');
+     } return;
+}
 
 function game(clicked_id){
     let column = document.getElementById(clicked_id).id;
