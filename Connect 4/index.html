@@ -16,13 +16,13 @@
         <div class="main">
             <div class="board">
                 <div class="buttons">
-                    <div class="btn btn1" id="1" onclick="game(this.id)">1</div>
-                    <div class="btn btn2" id="2" onclick="game(this.id)">2</div>
-                    <div class="btn btn3" id="3" onclick="game(this.id)">3</div>
-                    <div class="btn btn4" id="4" onclick="game(this.id)">4</div>
-                    <div class="btn btn5" id="5" onclick="game(this.id)">5</div>
-                    <div class="btn btn6" id="6" onclick="game(this.id)">6</div>
-                    <div class="btn btn7" id="7" onclick="game(this.id)">7</div>
+                    <div class="btn btn1" id="1" onclick="game(this.id), checkWinner(this.id)">1</div>
+                    <div class="btn btn2" id="2" onclick="game(this.id), checkWinner(this.id)">2</div>
+                    <div class="btn btn3" id="3" onclick="game(this.id), checkWinner(this.id)">3</div>
+                    <div class="btn btn4" id="4" onclick="game(this.id), checkWinner(this.id)">4</div>
+                    <div class="btn btn5" id="5" onclick="game(this.id), checkWinner(this.id)">5</div>
+                    <div class="btn btn6" id="6" onclick="game(this.id), checkWinner(this.id)">6</div>
+                    <div class="btn btn7" id="7" onclick="game(this.id), checkWinner(this.id)">7</div>
                 </div>
                 <div class="tiles">
                     <div class="space" id="r1c1"></div>
@@ -75,8 +75,8 @@
                 </div>
                 <div class="players">
                     <div id="current" class="current">Current</div>
-                    <div class="player1"><div id="p1"></div><p>Player 1</p></div>
-                    <div class="player2"><div id="p2"></div><p>Player 2</p></div>
+                    <div class="player1"><div id="p1"></div><p id="w1">Player 1</p></div>
+                    <div class="player2"><div id="p2"></div><p id="w2">Player 2</p></div>
                 </div>
             </div>
         </div>
