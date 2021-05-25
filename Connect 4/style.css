@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background: #e07a5f;
+    background-color: black;
 }
 
 
@@ -8,32 +8,37 @@ body{
 div.title{
     position: absolute;
     left: 50%;
-    top: 5%;
+    top: 5vh;
+    width: max-content;
     transform: translate(-50%, -50%);
     font-family: 'Goblin One', cursive;
     font-size: 40px;
-    
+    color: #80ffdb;
+    animation: changeColor 5s linear infinite;
 }
 
 div.buttons{
-    margin-top: -340px;
-    margin-left: -30px;
+    margin-top: -350px;
+    margin-left: 0px;
     display: grid;
     grid-template-columns: 10px 10px 10px 10px 10px 10px 10px;
     grid-column-gap: 75px;
     text-align: center;
     justify-content: center;
-    text-indent: -7px;
     font-family: 'Goblin One', cursive;
 }
 
-div.btn {
-    width: 0;
-    height: 0;
-    border-right: 40px solid transparent;
-    border-left: 40px solid transparent;
-    border-top: 40px solid #80ffdb;
+i{
+    transform: scale(4);
     cursor: pointer;
+    color: #80ffdb;
+    animation: changeColor 5s linear infinite;
+}
+
+i:hover{
+    color: #00ff0a;
+    box-shadow: 0 0 80px #00ff0a;
+    animation: none;
 }
 
 div.board{
@@ -42,10 +47,10 @@ div.board{
     top: 55%;
     transform: translate(-50%, -50%);
     min-width: 600px;
-    min-height: 500px;
-    border: 5px solid black;
+    min-height: 520px;
+    border: 5px solid white;
     border-radius: 50px;
-    background-color: #3d405b;
+    background-color: black;
 }
 
 div.buttons{
@@ -69,18 +74,29 @@ div.tiles{
 }
 
 div.space{
-    background: white;
+    background: black;
     border-radius: 50%;
-    border: 2px solid black;
+    border: 2px solid white;
 }
 
 div.players{
     position: absolute;
-    left: -280px;
-    top: 50%;
+    left: 50%;
+    top: 120%;
     transform: translate(-50%, -50%);
     font-family: 'Goblin One', cursive;
     font-size: 25px;
+    color: white;
+}
+
+.player1{
+    color: #f9c74f;
+    
+}
+
+.player2{
+    color: #9b2226;
+    
 }
 
 div.current{
@@ -95,8 +111,9 @@ div.p1on{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: yellow;
+    background: #f9c74f;
     border: 1px solid black;
+    box-shadow: 0 0 80px #f9c74f;
 }
 
 div.p2on{
@@ -105,18 +122,19 @@ div.p2on{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #d90429;
+    background: #9b2226;
+    box-shadow: 0 0 80px #9b2226;
     border: 1px solid #081c15;
 }
 
 .one{
-    background: yellow;
+    background: #f9c74f;
     border-radius: 50%;
     border: 2px solid #081c15;
 }
 
 .two{
-    background: #d90429;
+    background: #9b2226;
     border-radius: 50%;
     border: 2px solid #081c15;
 }
@@ -128,20 +146,23 @@ div.main{
 
 .main{
     zoom: 0.9;
-    -moz-transform: scale(0.7);
+    -moz-transform: scale(0.8);
 }
 
 @media only screen and (max-width: 600px) {
+    .main{
+    
+    -moz-transform: scale(0.9);
+}
   .title {
     display: flex;
-    position: absolute;
     left: 55%;
-    top: 5%;
+    width: fit-content;
     transform: translate(-50%, -50%);
     font-size: 80px;
   }
   body{
-    transform: scale(0.5);
+    transform: scale(0.6);
 }
  .players{
     position: absolute;
@@ -151,3 +172,12 @@ div.main{
    
   }
 }
+
+@keyframes changeColor {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
