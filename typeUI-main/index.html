@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ui.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ui.js"></script>
+</head>
+<body>
+    <div id="display" class="displayOff">
+        <p id="demo" class="textOff"></p>
+        <div id="inputDiv" class="inputDivOff"></div>
+        <form id="form" onsubmit="return false;">
+            <input id="input" class="inputOff" autocomplete="off" type="text"></input>
+            <button type="submit" id="submit" class="submitOff" onclick="typeWriter()"><i class="fas fa-paper-plane"></i></button>
+            <i id="rangle" class="raOff fas fa-angle-right"></i><i id="square" class="sOff fas fa-square" onkeypress="moveRight()"></i>
+        </form>
+    </div>
+    <button id="power" class="powerOff" onclick="changeClass()"></button>
+</body>
+</html> 
